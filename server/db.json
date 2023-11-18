@@ -1,0 +1,119 @@
+{
+  "clothes": [
+    {
+      "id": 1,
+      "category": "t-shirt",
+      "price": 229,
+      "sale": 15,
+      "title": "Футболка BlackSkinHead",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png",
+      "variants": [
+        {
+          "color": "blue",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png"
+        },
+        {
+          "color": "green",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0d87dc19-0a36-4034-b854-b819c53e6d20/sportswear-premium-essentials-mens-t-shirt-mkhTvc.png"
+        },
+        {
+          "color": "orange",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ecf5e28-079e-4a54-91e2-83f3606b776a/acg-mens-t-shirt-bW3sRj.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "jacket",
+      "price": 229,
+      "sale": 15,
+      "title": "Tennis Jacket",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5c3f635e-ea61-47f5-ac9c-eb259ae2e381/nikecourt-mens-tennis-jacket-PFrCzF.png",
+      "variants": [
+        {
+          "color": "aquamarine",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5c3f635e-ea61-47f5-ac9c-eb259ae2e381/nikecourt-mens-tennis-jacket-PFrCzF.png"
+        },
+        {
+          "color": "white",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/94d149dd-b8b3-4e39-a8d3-33586db62e43/nikecourt-mens-tennis-jacket-PFrCzF.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "sweatshirt",
+      "price": 229,
+      "sale": 15,
+      "title": "Свитшот Sacred Relic",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b8f170ae-bddc-4403-897b-7ac98845afd5/sportswear-tech-fleece-mens-crew-xN0gwb.png",
+      "variants": [
+        {
+          "color": "orange",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b8f170ae-bddc-4403-897b-7ac98845afd5/sportswear-tech-fleece-mens-crew-xN0gwb.png"
+        },
+        {
+          "color": "grey",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/11d032f2-6433-4694-a83b-add65f586ba3/sportswear-tech-fleece-mens-crew-xN0gwb.png"
+        },
+        {
+          "color": "black",
+          "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7b12fa9a-9bdf-4208-8530-44833a757bff/sportswear-tech-fleece-mens-crew-xN0gwb.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "t-shirt",
+      "price": 229,
+      "sale": 15,
+      "title": "Футболка USA",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png"
+    },
+    {
+      "id": 5,
+      "category": "coat",
+      "price": 229,
+      "sale": 15,
+      "title": "Пальто UZB",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png"
+    },
+    {
+      "id": 6,
+      "category": "sweetshot",
+      "price": 229,
+      "sale": 15,
+      "title": "Свитшот KZT",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png"
+    },
+    {
+      "id": 7,
+      "category": "t-shirt",
+      "price": 229,
+      "sale": 15,
+      "title": "Футболка USA",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png"
+    },
+    {
+      "id": 8,
+      "category": "coat",
+      "price": 229,
+      "sale": 15,
+      "title": "Пальто UZB",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png"
+    },
+    {
+      "id": 9,
+      "category": "sweetshot",
+      "price": 229,
+      "sale": 15,
+      "title": "Свитшот KZT",
+      "imageURL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b71be779-4952-4883-bec0-465968b6b8ef/sportswear-club-mens-t-shirt-ShrJfX.png"
+    }
+  ],
+  "cart": [],
+  "orders": [],
+  "messages": [],
+  "callback": [],
+  "users": []
+}

@@ -1,18 +1,16 @@
+import { Link, useNavigate } from "react-router-dom";
+import { SecondButton } from "../shared";
 import bagLogo from "../assets/bag-logo.svg"
 import mainLogo from "../assets/main-logo.svg"
 import phoneLogo from "../assets/phone-logo.svg"
-import { Link, useNavigate } from "react-router-dom";
-import { FC, useEffect, useMemo } from "react";
-import { RxAvatar } from "react-icons/rx";
-import { Dropdown } from "antd";
 
 export const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="w-full h-[100px] z-10 sticky t-0 bg-white">
+    <header className="w-full h-24 z-20 sticky top-0 bg-white">
       <div className="h-full w-full flex justify-around items-center container mx-auto">
-        <div className="flex justify-center items-center uppercase w-[140px] h-[25px] cursor-pointer gap-[14px]">
+        <div className="flex justify-center items-center uppercase w-36 h-6 cursor-pointer gap-3.5">
         <img src={mainLogo} alt="main logo" />
           womazing
         </div>
@@ -23,14 +21,14 @@ export const Header = () => {
           <Link to="/contacts">Контакты</Link>
         </nav>
         <div className="flex items-center cursor-pointer">
-          <img className="w-[24px] h-[24px]" src={phoneLogo}alt="phone logo" />
+          <img className="w-6 h-6" src={phoneLogo}alt="phone logo" />
           <span>+7 (495) 823-54-12</span>
         </div>
-          <button onClick={() => navigate("/cart")} className="w-[27px] h-[27px] bg-transparent rounded-none relative">
+          <button onClick={() => navigate("/cart")} className="w-7 h-7 bg-transparent rounded-none relative">
             <img src={bagLogo} alt="bag logo" />
-            <span className="block text-[10px] absolute top-[-10px] right-[-10px] w-4 h-4 bg-[#998E78] rounded-full">10</span>
+            <span className="block text-[10px] absolute top-[-10px] right-[-10px] w-4 h-4 bg-beige rounded-full">10</span>
           </button>
-          <button>Регистрация</button>
+          <SecondButton>Регистрация</SecondButton>
       </div>
     </header>
   );
