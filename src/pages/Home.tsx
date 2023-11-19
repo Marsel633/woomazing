@@ -43,13 +43,13 @@ export const Home: React.FC = observer(() => {
 
   return (
     <Layout>
-      <section className="max-w-full flex justify-center items-center mb-36">
+      <section className="max-w-full flex justify-center items-center mb-24">
         <CarouselWrapper
           dotPosition="bottom"
           style={{ width: 850, height: 600, paddingLeft: "25%" }}
         >
           <div className="flex justify-center items-center h-full">
-            <h2 className="text-[55px] font-medium leading-[55px]">
+            <h2 className="title">
               Новые поступления <br /> в этом сезоне
             </h2>
             <p className="text-xl w-[56%] text-right py-11">
@@ -78,8 +78,8 @@ export const Home: React.FC = observer(() => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto mb-36">
-        <h3 className="text-4xl font-medium mb-36">Новая коллекция</h3>
+      <section className="container mx-auto mb-24">
+        <h3 className="subtitle">Новая коллекция</h3>
         <div className="grid grid-cols-3 gap-7 pb-[8%]">
           {clothes.data.slice(0,3).map(({ id, title, imageURL, price, sale }) => (
             <ShopItem
@@ -95,8 +95,8 @@ export const Home: React.FC = observer(() => {
           <SecondButton>Открыть магазин</SecondButton>
         </div>
       </section>
-      <section className="container mx-auto pb-[10%]">
-        <h3 className="text-4xl font-medium pb-[5%]">Что для нас важно</h3>
+      <section className="container mx-auto">
+        <h3 className="subtitle">Что для нас важно</h3>
         <div className="flex items-center gap-[5%]">
           {importantForUsArray.map((item) => (
             <div className="flex flex-col gap-5">
@@ -110,7 +110,7 @@ export const Home: React.FC = observer(() => {
         </div>
       </section>
       <section className="container mx-auto pb-[10%]">
-        <h3 className="text-4xl font-medium pb-[10%]">
+        <h3 className="subtitle">
           Команда мечты Womazing
         </h3>
         <div className="flex flex-col relative">
