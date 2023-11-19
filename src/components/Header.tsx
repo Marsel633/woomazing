@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import { SecondButton } from "../shared";
 import bagLogo from "../assets/bag-logo.svg"
 import mainLogo from "../assets/main-logo.svg"
 import phoneLogo from "../assets/phone-logo.svg"
@@ -28,7 +27,7 @@ export const Header = () => {
             <img src={bagLogo} alt="bag logo" />
             <span className="block text-[10px] absolute top-[-10px] right-[-10px] w-4 h-4 bg-beige rounded-full">10</span>
           </button>
-          <SecondButton>Регистрация</SecondButton>
+          <button className="rounded-none border border-darkGreen text-darkGreen px-6 py-2 hover:bg-darkGreen hover:text-white transition-all duration-300">Регистрация</button>
       </div>
     </header>
   );
