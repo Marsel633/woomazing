@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Layout } from "../shared";
+import { Layout, categories } from "../shared";
 import { ShopItem } from "../components";
 import { Link } from "react-router-dom";
 import arrowRight from "../assets/arrowRightIcon.svg";
@@ -48,79 +48,34 @@ export const Shop: React.FC = observer(() => {
           <p>Главная - Магазин</p>
         </div>
         <div className="pt-2/12 pb-1/12 flex gap-2.5">
-          <button
+          {categories.map((item) => (
+            <button key={item.title}
             onClick={() => {
-              handleClickFilterBtn("all");
+              handleClickFilterBtn(`${item.category}`);
             }}
             className={
-              activeButton === "all"
+              activeButton === `${item.category}`
                 ? "w-48 h-16 border bg-transparent outline-none"
                 : "w-48 h-16 outline-none bg-black text-white"
             }
           >
-            Все
+            {item.title}
           </button>
-          <button
-            onClick={() => {
-              handleClickFilterBtn("jacket");
-            }}
-            className={
-              activeButton === "jacket"
-                ? "w-48 h-15 border bg-transparent outline-none"
-                : "w-48 h-15 outline-none bg-black text-white"
-            }
-          >
-            Пальто
-          </button>
-          <button
-            onClick={() => {
-              handleClickFilterBtn("sweatshirt");
-            }}
-            className={
-              activeButton === "sweatshirt"
-                ? "w-48 h-15 border bg-transparent outline-none"
-                : "w-48 h-15 outline-none bg-black text-white"
-            }
-          >
-            Свитшоты
-          </button>
-          <button
-            onClick={() => {
-              handleClickFilterBtn("cardigan");
-            }}
-            className={
-              activeButton === "cardigan"
-                ? "w-48 h-15 border bg-transparent outline-none"
-                : "w-48 h-15 outline-none bg-black text-white"
-            }
-          >
-            Кардиганы
-          </button>
-          <button
-            onClick={() => {
-              handleClickFilterBtn("t-shirt");
-            }}
-            className={
-              activeButton === "t-shirt"
-                ? "w-48 h-15 border bg-transparent outline-none"
-                : "w-48 h-15 outline-none bg-black text-white"
-            }
-          >
-            Толстовки
-          </button>
+          ))}
         </div>
         <p className="mt-16">
           Показано {params._limit} из {totalCount}
         </p>
         <div className="grid grid-cols-3 pt-[5%] gap-8">
           {clothes.data.map(({ id, title, imageURL, price, sale }) => (
+           <Link to={`/shop/${id}`}>
             <ShopItem
               key={id}
               title={title}
               imageURL={imageURL}
               price={price}
               sale={sale}
-            />
+            /></Link>
           ))}
         </div>
         <div className="flex justify-center items-center flex-col">

@@ -9,6 +9,11 @@ interface IImportantForUsCard {
   [key:string]:any;
 }
 
+interface ICategories {
+  category: string;
+  title: string;
+}
+
 export const importantForUsArray: IImportantForUsCard[] = [
   {
     icon: quality,
@@ -26,3 +31,26 @@ export const importantForUsArray: IImportantForUsCard[] = [
     desc: "Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing",
   },
 ];
+
+export const categories: ICategories[] = [
+  {
+    category: "all",
+    title: "Все",
+  },
+  {
+    category: "jacket",
+    title: "Пальто",
+  },
+  {
+    category: "sweatshirt",
+    title: "Свитшоты",
+  },
+  {
+    category: "cardigan",
+    title: "Кардиганы",
+  },
+  {
+    category: "t-shirt",
+    title: "Толстовки",
+  }
+]
