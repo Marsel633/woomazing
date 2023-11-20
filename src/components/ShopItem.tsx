@@ -29,7 +29,7 @@ export const ShopItem: FC<IShopItemProps> = ({
   sale,
 }) => {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center col-span-1">
       <div className="relative">
         <img src={imageURL} alt={title} />
         <div className="absolute w-full h-full top-0 left-0 bg-[#6e9c9f00] transition-all duration-300 hover:bg-[#6e9c9fa3]">
