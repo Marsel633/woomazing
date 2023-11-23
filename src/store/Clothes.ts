@@ -1,4 +1,3 @@
-import { message } from "antd";
 import axios from "axios";
 import { makeAutoObservable } from "mobx";
 
@@ -31,7 +30,7 @@ class ClothesStore {
       this.clothes.data = response.data;
       this.totalCount = response.data.length;
     } catch (error) {
-      this.clothes.error = new Error(`${message}`);
+      this.clothes.error = new Error();
     } finally {
       this.clothes.isPending = false;
     }
@@ -43,7 +42,7 @@ class ClothesStore {
       const response = await axios.get(`${process.env.REACT_APP_MAIN_URL}/clothes`, {params});
       this.clothes.data = response.data;
     } catch (error) {
-      this.clothes.error = new Error(`${message}`)
+      this.clothes.error = new Error()
     } finally {
       this.clothes.isPending = false;
     }
@@ -55,7 +54,7 @@ class ClothesStore {
       const response = await axios.get(`${process.env.REACT_APP_MAIN_URL}/clothes`, {params});
       this.clothes.data = response.data;
     } catch (error) {
-      this.clothes.error = new Error(`${message}`)
+      this.clothes.error = new Error()
     } finally {
       this.clothes.isPending = false;
     }
